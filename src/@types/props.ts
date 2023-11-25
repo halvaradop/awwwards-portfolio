@@ -7,3 +7,7 @@ export interface CircleProps {
 export interface KnowledgeProps {
     technologies: string[]
 }
+
+export interface TextProps {
+    text: string
+}

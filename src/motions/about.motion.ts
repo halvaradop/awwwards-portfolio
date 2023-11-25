@@ -1,13 +1,12 @@
 import { Variants } from "framer-motion"
+import { orquestation } from "../utils/orquestation"
 
 const containerVariants: Variants = {
     hidden: {},
     visible: {
-        transition: {
-            type: "spring",
-            when: "beforeChildren",
-            staggerChildren: 0.3
-        }
+        transition: orquestation({
+            staggerChildren: 0.5
+        })
     }
 }
 
@@ -18,7 +17,12 @@ const itemsVariants: Variants = {
     },
     visible: {
         y: 0,
-        opacity: 1
+        opacity: 1,
+        transition: {
+            type: "spring",
+            stiffness: 40,
+            damping: 8,
+        }
     }
 }
 

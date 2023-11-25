@@ -2,12 +2,15 @@ import { createBrowserRouter, RouterProvider, createRoutesFromElements, Route } 
 import { AppLayout } from "./components/Layouts/AppLayout"
 
 const App = () => {
+    const options = {
+        basename: "/awwwards-portfolio"
+    } as const
 
     const router = createBrowserRouter(createRoutesFromElements(
         <Route  path="/" element={<AppLayout />}>
 
         </Route>
-    ), { basename: "/awwwards-portfolio" })
+    ), options)
      
     return <RouterProvider router={router} />
 }
