@@ -6,33 +6,18 @@ const segmentsVariants: Variants = {
     hidden: {},
     visible: {
         transition: orquestation({ 
-            staggerChildren: 1.6, 
+            staggerChildren: 1, 
             staggerDirection: -1 
         })
     }
 }
 
 const containerVariants: Variants = {
-    hidden: {},
     visible: {
         transition: orquestation({ 
-            staggerChildren: 0.3,
+            staggerChildren: 0.1,
             delayChildren: 0.25 
         })
-    }
-}
-
-const titlesVariants: Variants = {
-    hidden: {
-        y: "80%",
-        opacity: 0,
-    },
-    visible: {
-        y: 0,
-        opacity: 1,
-        transition: {
-            duration: 0.5
-        }
     }
 }
 
@@ -52,6 +37,23 @@ const nameVariants: Variants = {
     }
 }
 
+const itemsVariants: Variants = {
+    hidden: {
+        y: "100%",
+        opacity: 0
+    },
+    visible: {
+        y: 0,
+        opacity: 1,
+        transition: {
+            type: "spring",
+            stiffness: 80,
+            bounce: 100,
+            mass: 0.4
+        },
+    }
+}
+
 
 const lineVariants: Variants = {
     hidden: {
@@ -61,7 +63,12 @@ const lineVariants: Variants = {
     visible: {
         x: 0,
         opacity: 1,
-        transition: { delay: 2.65 }
+        transition: { 
+            delay: 1.4,
+            type: "spring",
+            stiffness: 100,
+            mass: 0.8
+        }
     }
 }
 
@@ -74,8 +81,12 @@ const paragraphVariants: Variants = {
         y: 0,
         opacity: 1,
         transition: {
-            ease: "easeInOut",
-            delay: 2.7
+            delay: 1.9,
+            type: "spring",
+            stiffness: 100,
+            damping: 100,
+            mass: 0.6,
+            duration: 0.1
         }
     }
 }
@@ -83,8 +94,8 @@ const paragraphVariants: Variants = {
 export { 
     segmentsVariants,
     containerVariants, 
-    titlesVariants, 
     nameVariants, 
+    itemsVariants,
     lineVariants,
     paragraphVariants 
 }

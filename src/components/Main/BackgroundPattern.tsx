@@ -13,7 +13,7 @@ const BackgroundPattern = () => {
             </picture>
             <picture>
                 <source media="(min-width: 1024px)" srcSet={auroraLeftDesktop} />
-                <img className="absolute bottom-0 left-0 -z-10" src={auroraLeft} alt="aurora" loading="lazy" draggable="false" />
+                <img className="absolute top-0 left-0 -z-10" src={auroraLeft} alt="aurora" loading="lazy" draggable="false" />
             </picture>
         </>
     )

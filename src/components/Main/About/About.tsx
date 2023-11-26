@@ -1,27 +1,20 @@
-import { AboutTitle } from "./AboutTitle"
+import { LayerIsView } from "../LayerIsView"
+import { LayerText } from "../LayerText"
+import { containerVariants, itemsVariants } from "../../../motions/about.motion"
+import { paragraphs, questions } from "../../../utils/data.utils"
 
 
 const About = () => {
 
     return (
-        <section className="mt-10 base:grid base:grid-cols-2 base:gap-x-5">
-            <AboutTitle />
+        <section className="w-full mt-10 base:grid base:grid-cols-sec base:gap-x-5">
+            <LayerIsView className="text-4xl font-vollkorn sm:text-5xl md:text-6xl base:text-5xl lg:text-6xl xl:text-7xl" options={{ margin: "0% 0% -30% 0%" }} variants={containerVariants} initial="hidden" animate="visible">
+                <LayerText messages={questions} variants={itemsVariants} />
+            </LayerIsView>
             <div className="mt-10 grid gap-y-8 leading-7 base:mt-0">
-                <p className="w-full">
-                    Soy Hernan Alvarado, un estudiante de 20 años de Ingeniería de Sistemas en la Universidad 
-                    El Bosque. Mi personalidad se forma a través de mi amor por el arte, la música y la 
-                    tecnología. 
-                </p>
-                <p className="w-full">
-                    Como desarrollador, mi objetivo es crear soluciones eficientes y creativas, integrando 
-                    estas pasiones en proyectos innovadores. Programar para mí es una montaña rusa de 
-                    emociones que disfruto plenamente. 
-                </p>
-                <p className="w-full">
-                    Aspiro a ser una persona integral para la sociedad, brindando soluciones y cumpliendo 
-                    los deseos de los demás. Me considero una persona ávida de conocimiento, siempre ansioso 
-                    por descubrir nuevas tecnologías y aprender continuamente.
-                </p>
+                {paragraphs.map((paragraph, key) => (
+                    <p key={key}>{paragraph}</p>
+                ))}
             </div>
         </section>
     )

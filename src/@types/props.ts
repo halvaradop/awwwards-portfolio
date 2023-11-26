@@ -1,4 +1,5 @@
-
+import { Variants } from "framer-motion"
+import { AnimateVariants, InViewOptions } from "./types"
 
 export interface CircleProps {
     word: string
@@ -9,5 +10,23 @@ export interface KnowledgeProps {
 }
 
 export interface TextProps {
-    text: string
+    className?: string,
+    text: string,
+    variants?: Variants
+}
+
+export interface LayerTextProps  {
+    className?: string,
+    messages: string[],
+    variants?: Variants
+}
+
+export interface CardKnowledgeProps {
+    knowledge: string
+}
+
+export interface LayerIsViewProps extends AnimateVariants {
+    className?: string,
+    options?: InViewOptions,
+    children: React.ReactNode,
 }

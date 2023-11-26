@@ -1,12 +1,12 @@
 import { motion } from "framer-motion"
 import { TextProps } from "../../@types/props"
-import { itemsVariants } from "../../motions/about.motion"
+import { merge } from "../../utils/merge"
 
-const Text = ({ text }: TextProps) => {
+const Text = ({  className = "", text, variants }: TextProps) => {
 
     return (
-        <div className="overflow-hidden">
-            <motion.p variants={itemsVariants}>{text}</motion.p>
+        <div className={merge("overflow-hidden", className)}>
+            <motion.p variants={variants}>{text}</motion.p>
         </div>
     )
 }
