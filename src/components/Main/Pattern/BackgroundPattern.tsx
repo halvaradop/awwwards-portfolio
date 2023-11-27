@@ -1,7 +1,7 @@
-import auroraRight from "../../assets/icons/aurora-right.svg"
-import auroraLeft from "../../assets/icons/aurora-left.svg"
-import auroraLeftDesktop from "../../assets/icons/aurora-left-desktop.svg"
-import auroraRightDesktop from "../../assets/icons/aurora-right-desktop.svg"
+import auroraRight from "../../../assets/icons/aurora-right.svg"
+import auroraLeft from "../../../assets/icons/aurora-left.svg"
+import auroraLeftDesktop from "../../../assets/icons/aurora-left-desktop.svg"
+import auroraRightDesktop from "../../../assets/icons/aurora-right-desktop.svg"
 
 const BackgroundPattern = () => {
 

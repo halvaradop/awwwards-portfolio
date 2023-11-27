@@ -1,5 +1,5 @@
 import { Text } from "./Text"
-import { LayerTextProps } from "../../@types/props"
+import { LayerTextProps } from "../../../@types/props"
 
 const LayerText = ({ className = "", messages, variants }: LayerTextProps) => {
     return messages.map((message, key) => (

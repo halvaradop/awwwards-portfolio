@@ -1,6 +1,6 @@
 import { useRef } from "react"
 import { motion, useInView } from "framer-motion"
-import { LayerIsViewProps } from "../../@types/props"
+import { LayerIsViewProps } from "../../../@types/props"
 
 const LayerIsView = ({ className = "", children, variants, animate = "", initial = "",  exit = "", options }: LayerIsViewProps) => {
     const ref = useRef<HTMLDivElement>(null)

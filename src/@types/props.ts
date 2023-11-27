@@ -1,4 +1,4 @@
-import { Variants } from "framer-motion"
+import { MotionValue, Variants } from "framer-motion"
 import { AnimateVariants, InViewOptions } from "./types"
 
 export interface CircleProps {
@@ -29,4 +29,10 @@ export interface LayerIsViewProps extends AnimateVariants {
     className?: string,
     options?: InViewOptions,
     children: React.ReactNode,
+}
+
+export interface ParallaxColumnProps {
+    className?: string,
+    cols: string[],
+    y: MotionValue<number>
 }

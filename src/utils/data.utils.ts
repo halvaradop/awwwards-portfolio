@@ -3,6 +3,7 @@ const titleText = {
     software: "De  Software".split("")
 }
 
+const technologies = ["UI", "Diseño", "Ingeniero", "Desarollador", "UX"]
 const questions = ["De donde vengo,", "Donde estoy", "Adonde aspiro ir."]
 
 const paragraphs = [
@@ -11,4 +12,4 @@ const paragraphs = [
     "Aspiro a ser una persona integral para la sociedad, brindado soluciones y cumpliendo los deseos de los demás. Me considero una persona ambrienta de conocimiento, siempre ansioso por descubrir nuevas tecnologías y aprender continuamente"
 ]
 
-export { titleText, questions, paragraphs }
+export { titleText, questions, paragraphs, technologies }

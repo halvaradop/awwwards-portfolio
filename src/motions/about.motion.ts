@@ -20,11 +20,28 @@ const itemsVariants: Variants = {
         opacity: 1,
         transition: {
             type: "spring",
-            bounce: 10,
             damping: 15,
             mass: 0.2            
         },
     }
 }
 
-export { containerVariants, itemsVariants }
+
+const textVariants: Variants = {
+    hidden: {
+        y: "100%",
+        opacity: 0
+    },
+    visible: {
+        y: 0,
+        opacity: 1,
+        transition: {
+            type: "spring",
+            stiffness: 120,
+            damping: 60,
+            mass: 1
+        }
+    }
+}
+
+export { containerVariants, itemsVariants, textVariants }

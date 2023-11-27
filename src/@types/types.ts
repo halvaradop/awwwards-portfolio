@@ -19,3 +19,4 @@ export interface AnimateVariants {
     initial?: string,
     exit?: string
 }
+

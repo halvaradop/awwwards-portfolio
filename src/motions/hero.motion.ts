@@ -48,7 +48,6 @@ const itemsVariants: Variants = {
         transition: {
             type: "spring",
             stiffness: 80,
-            bounce: 100,
             mass: 0.4
         },
     }
@@ -74,19 +73,15 @@ const lineVariants: Variants = {
 
 const paragraphVariants: Variants = {
     hidden: {
-        y: 50,
+        y: "80%",
         opacity: 0
     },
     visible: {
         y: 0,
         opacity: 1,
         transition: {
-            delay: 1.9,
-            type: "spring",
-            stiffness: 100,
-            damping: 100,
-            mass: 0.6,
-            duration: 0.1
+            delay: 2,
+            ease: "easeOut",
         }
     }
 }

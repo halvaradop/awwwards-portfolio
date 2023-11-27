@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"
-import { TextProps } from "../../@types/props"
-import { merge } from "../../utils/merge"
+import { TextProps } from "../../../@types/props"
+import { merge } from "../../../utils/merge"
 
 const Text = ({  className = "", text, variants }: TextProps) => {
 
