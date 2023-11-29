@@ -1,4 +1,4 @@
-import { KnowledgeProps } from "../../@types/props"
+import { KnowledgeProps } from "../../../@types/props"
 
 const Knowledge = ({ technologies }: KnowledgeProps) => {
 

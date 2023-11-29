@@ -1,7 +1,7 @@
 import { motion } from "framer-motion"
-import { LayerText } from "./IsView/LayerText"
-import { containerVariants, paragraphVariants, nameVariants, segmentsVariants, lineVariants, itemsVariants } from "../../motions/hero.motion"
-import { titleText } from "../../utils/data.utils"
+import { LayerText } from "../IsView/LayerText"
+import { containerVariants, paragraphVariants, nameVariants, segmentsVariants, lineVariants, itemsVariants } from "../../../motions/hero.motion"
+import { titleText } from "../../../utils/data.utils"
 
 
 const Hero = () => {

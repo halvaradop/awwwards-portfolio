@@ -1,7 +1,7 @@
 import { useRef } from "react"
 import { motion, useScroll, useTransform } from "framer-motion"
-import { TechnologiesListProps } from "../../@types/props"
-import { merge } from "../../utils/merge"
+import { TechnologiesListProps } from "../../../@types/props"
+import { merge } from "../../../utils/merge"
 
 const TechnologiesList = ({ className = "", technologies, input, range }: TechnologiesListProps) => {
     const ref = useRef<HTMLUListElement>(null)

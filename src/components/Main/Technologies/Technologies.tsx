@@ -1,11 +1,11 @@
-import { containerVariants, itemsVariants } from "../../motions/about.motion"
-import { LayerIsView } from "./IsView/LayerIsView"
+import { containerVariants, itemsVariants } from "../../../motions/about.motion"
+import { LayerIsView } from "../IsView/LayerIsView"
 import { TechnologiesList } from "./TechnologiesList"
-import { creativeTitle, techologies } from "../../utils/data.utils"
-import { LayerText } from "./IsView/LayerText"
+import { creativeTitle, techologies } from "../../../utils/data.utils"
+import { LayerText } from "../IsView/LayerText"
 
 
-const Creative = () => {
+const Technologies = () => {
 
 
     return (
@@ -21,4 +21,4 @@ const Creative = () => {
     )
 }
 
-export { Creative }
+export { Technologies }

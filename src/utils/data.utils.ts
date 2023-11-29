@@ -1,5 +1,7 @@
+import { ExperienceWork } from "../@types/types"
+
 const titleText = {
-    developer: "Desarrollador".split(""),
+    developer: "Ingeniero".split(""),
     software: "De  Software".split("")
 }
 
@@ -12,7 +14,29 @@ const paragraphs = [
     "Aspiro a ser una persona integral para la sociedad, brindado soluciones y cumpliendo los deseos de los demás. Me considero una persona ambrienta de conocimiento, siempre ansioso por descubrir nuevas tecnologías y aprender continuamente"
 ]
 
-const techologies = [["Java", "Javascript", "React", "Redux", "Typescript", "Spring Boot", "PL SQL"], ["Figma", "HTML", "CSS", "React Router", "Framer Motion", "TailwindCSS", "SQL"]]
+const techologies = [["Java", "Javascript", "React", "Redux", "Typescript", "Spring Boot", "PL SQL"], ["HTML", "CSS", "React Router", "Framer Motion", "TailwindCSS", "Figma", "SQL"]]
 const creativeTitle = ["Tecnologías", "Herramientas"]
 
-export { titleText, questions, paragraphs, skills, techologies, creativeTitle }
+const experiencesList: ExperienceWork[] = [
+    { 
+        role: "Ingeniero de software", 
+        company: "TailwindCSS", 
+        date: "Agosto 2023 - presente",  
+        technologies: [
+            "Desarrollo de un plugin React, optimizando componentes con variantes",
+            "Diseño y desarrollo de aplicaciones web con React",
+            "Integración exitosa de múltiples API externas en diversas plataformas"
+        ]
+    },
+    {
+        role: "Desarrollador frontend",
+        company: "Freelance",
+        date: "Junio 2023 - presente",
+        technologies: [
+            "Desarrollo de proyectos frontend de alta calidad para diversas compañías, asegurando resultados exitosos y cumpliendo con los más altos estándares de calidad"
+        ]
+
+    }
+]
+
+export { titleText, questions, paragraphs, skills, techologies, creativeTitle, experiencesList }

@@ -1,9 +1,10 @@
 import { About } from "./About/About"
 import { BackgroundPattern } from "./Pattern/BackgroundPattern"
-import { Hero } from "./Hero"
-import { Knowledge } from "./Knowledge"
-import { Creative } from "./Technologies"
+import { Hero } from "./Hero/Hero"
+import { Knowledge } from "./Knowledge/Knowledge"
+import { Technologies } from "./Technologies/Technologies"
 import { skills } from "../../utils/data.utils"
+import { Experience } from "./Experience/Experience"
 
 
 const Main = () => {
@@ -16,8 +17,8 @@ const Main = () => {
                 <BackgroundPattern />
             </section>
             <About />    
-            <Creative />  
-            <section className="h-screen"></section>
+            <Technologies />  
+            <Experience />
         </main>
     )
 }

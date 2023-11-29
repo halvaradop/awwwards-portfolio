@@ -1,5 +1,5 @@
 import { MotionValue, Variants } from "framer-motion"
-import { AnimateVariants, EntryInputRange, EntryOutputRange, InViewOptions } from "./types"
+import { AnimateVariants, EntryInputRange, EntryOutputRange, ExperienceWork, InViewOptions } from "./types"
 
 export interface CircleProps {
     word: string
@@ -41,4 +41,12 @@ export interface TechnologiesListProps {
     technologies: string[],
     input: EntryInputRange,
     range: EntryOutputRange
+}
+
+export interface ExperienceWorkProps {
+    experience: ExperienceWork
+}
+
+export interface ExperienceListProps {
+    experiences: ExperienceWork[]
 }

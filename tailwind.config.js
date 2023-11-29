@@ -21,6 +21,9 @@ export default {
         gray: {
           DEFAULT: '#383838',
           100: '#FFFFFF'
+        },
+        purple: {
+          DEFAULT: '#831ED2'
         }
       },
       fontFamily: {
