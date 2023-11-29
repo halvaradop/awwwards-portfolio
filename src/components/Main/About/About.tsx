@@ -1,8 +1,7 @@
 import { LayerIsView } from "../IsView/LayerIsView"
 import { LayerText } from "../IsView/LayerText"
-import { containerVariants, itemsVariants, textVariants } from "../../../motions/about.motion"
+import { containerVariants, itemsVariants } from "../../../motions/about.motion"
 import { paragraphs, questions } from "../../../utils/data.utils"
-import { Text } from "../IsView/Text"
 
 
 const About = () => {
@@ -14,9 +13,7 @@ const About = () => {
             </LayerIsView>
             <div className="mt-14 grid gap-y-8 leading-7 base:mt-0">
                 {paragraphs.map((paragraph, key) => (
-                    <LayerIsView key={key} options={{ margin: "0% 0% -10% 0%", once: true }} variants={containerVariants} initial="hidden" animate="visible">
-                        <Text text={paragraph} variants={textVariants} />
-                    </LayerIsView>
+                    <p key={key}>{paragraph}</p>
                 ))}
             </div>
         </section>

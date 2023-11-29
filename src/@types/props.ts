@@ -1,5 +1,5 @@
 import { MotionValue, Variants } from "framer-motion"
-import { AnimateVariants, InViewOptions } from "./types"
+import { AnimateVariants, EntryInputRange, EntryOutputRange, InViewOptions } from "./types"
 
 export interface CircleProps {
     word: string
@@ -9,10 +9,9 @@ export interface KnowledgeProps {
     technologies: string[]
 }
 
-export interface TextProps {
+export interface TextProps extends AnimateVariants {
     className?: string,
     text: string,
-    variants?: Variants
 }
 
 export interface LayerTextProps  {
@@ -35,4 +34,11 @@ export interface ParallaxColumnProps {
     className?: string,
     cols: string[],
     y: MotionValue<number>
+}
+
+export interface TechnologiesListProps {
+    className?: string,
+    technologies: string[],
+    input: EntryInputRange,
+    range: EntryOutputRange
 }

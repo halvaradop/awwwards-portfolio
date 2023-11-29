@@ -20,3 +20,5 @@ export interface AnimateVariants {
     exit?: string
 }
 
+export type EntryOutputRange = [start: string, end: string]
+export type EntryInputRange = [start: number, end: number]
